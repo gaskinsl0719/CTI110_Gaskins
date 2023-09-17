@@ -23,12 +23,15 @@ print()
 user_food = int (input("Last, how much do you need for food? "))
 print()
 #add expenses 
-user_expenses = user_fuel + user_accomodation +user_food
+user_expenses = user_fuel + user_accomodation + user_food
 print("------------Travel Expenses------------")
 print ("Location:", user_destination)
 print ("Initial Budget:", user_budget)
 print()
 print("Fuel:",user_fuel)
-print("Accomodation:",user_accomodation)
+print("Accomodation:", user_accomodation)
+print("Food:", user_food)
 print()
-#subtract expense from budget 
+#subtract expense from budget
+user_balance = user_budget - user_expenses
+print("Remaining Balance:" , user_balance)
